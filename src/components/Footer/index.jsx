@@ -6,7 +6,7 @@ import './index.css';
 
 const Footer = () => {
   const data = [
-    <NavLink className="" to="/">Home</NavLink>,
+    <NavLink className="link-list-a" to="/">Home</NavLink>,
   ];
 
   return (
