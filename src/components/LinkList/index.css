@@ -1,0 +1,10 @@
+.link-list {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  list-style: none;
+}
+
+.link-list-item {
+
+}
