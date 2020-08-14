@@ -8,7 +8,7 @@ const Header = () => {
   const data = [
     <NavLink className="link-list-a" to="/">Home</NavLink>,
     <NavLink className="link-list-a" to="/">About</NavLink>,
-    <NavLink className="link-list-a" to="/">Contact</NavLink>,
+    <NavLink className="link-list-a" to="/contact">Contact</NavLink>,
   ];
 
   return (

@@ -4,11 +4,15 @@ import { render } from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
+import Contact from './pages/Contact';
+
+import history from './utils/history';
 
 const App = () => (
-  <Router>
+  <Router history={history}>
     <Switch>
       <Route exact path="/" component={Home} />
+      <Route path="/contact" component={Contact} />
     </Switch>
   </Router>
 );
