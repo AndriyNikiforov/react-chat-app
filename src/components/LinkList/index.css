@@ -13,15 +13,14 @@
 }
 
 .link-list-a {
-  color: #000000;
+  color: #222831;
   text-decoration: none;
 }
 
 .link-list-a:visited {
-  color: #000000;
+  color: #222831;
 }
 
 .link-list-a:hover {
   color: #f5f5f5;
-
 }
