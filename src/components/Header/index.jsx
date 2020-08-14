@@ -6,7 +6,9 @@ import './index.css';
 
 const Header = () => {
   const data = [
-    <NavLink className="" to="/">Home</NavLink>,
+    <NavLink className="link-list-a" to="/">Home</NavLink>,
+    <NavLink className="link-list-a" to="/">About</NavLink>,
+    <NavLink className="link-list-a" to="/">Contact</NavLink>,
   ];
 
   return (

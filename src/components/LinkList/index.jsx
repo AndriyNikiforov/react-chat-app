@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './index.css';
+
 const LinkList = (props) => {
   const { data } = props;
   const listItems = data.map((item) => (
-    <li className="">
+    <li className="link-list-item">
       {item}
     </li>
   ));

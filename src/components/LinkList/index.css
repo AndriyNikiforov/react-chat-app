@@ -1,10 +1,27 @@
 .link-list {
   display: flex;
+  align-items: stretch;
+  flex-flow: row wrap;
   justify-content: center;
-  flex-flow: column wrap;
   list-style: none;
 }
 
 .link-list-item {
+  display: block;
+  flex: 0 1 auto;
+  margin-right: 25px;
+}
+
+.link-list-a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.link-list-a:visited {
+  color: #000000;
+}
+
+.link-list-a:hover {
+  color: #f5f5f5;
 
 }
