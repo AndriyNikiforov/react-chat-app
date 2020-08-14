@@ -5,9 +5,9 @@ import './index.css';
 
 const SideMenu = () => (
   <nav id="sideNav">
-    <ul className="">
-      <li className="">
-        <NavLink className="" to="/">Home</NavLink>
+    <ul className="sidenav-list">
+      <li className="sidenav-list-item">
+        <NavLink className="sidenav-link" to="/">Home</NavLink>
       </li>
     </ul>
   </nav>
