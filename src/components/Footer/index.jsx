@@ -1,8 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import LinkList from '../LinkList';
-
-import './index.css';
 
 const Footer = () => {
   const data = [
@@ -11,7 +8,6 @@ const Footer = () => {
 
   return (
     <footer id="footer">
-      <LinkList data={data} />
     </footer>
   );
 };

@@ -8,6 +8,8 @@ import Contact from './pages/Contact';
 
 import history from './utils/history';
 
+import './assets/tailwind.css';
+
 const App = () => (
   <Router history={history}>
     <Switch>

@@ -1,8 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import './index.css';
-
 const SideMenu = () => (
   <nav id="sideNav">
     <ul className="sidenav-list">

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './index.css';
-
 const Cart = () => (
   <div className="cards">
     <div className="card">
