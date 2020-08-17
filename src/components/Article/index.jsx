@@ -5,8 +5,8 @@ const Article = (props) => {
   const { data } = props;
 
   return (
-    <article className="article" id="article">
-      {data}
+    <article className="flex justify-between">
+      {data || 'asd'}
     </article>
   );
 };

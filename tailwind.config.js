@@ -12,6 +12,6 @@ module.exports = {
   variants: {
     textColor: ['responsive', 'hover', 'focus', 'visited'],
     opacity: ['responsive', 'hover', 'focus', 'visited'],
-
+    boxSizing: ['responsive', 'hover', 'focus'],
   },
 };
