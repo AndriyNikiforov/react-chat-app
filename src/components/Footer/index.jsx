@@ -9,7 +9,10 @@ const Footer = () => (
           <NavLink className="text-white visited:text-white no-underline" to="/">Home</NavLink>
         </div>
         <div className="flex mr-2 hover:bg-red-600 rounded-md justify-center box-content h-10 w-32 items-center">
-          <NavLink className="text-white visited:text-white no-underline" to="/">Home 1</NavLink>
+          <NavLink className="text-white visited:text-white no-underline" to="/contact">Contact</NavLink>
+        </div>
+        <div className="flex mr-2 hover:bg-red-600 rounded-md justify-center box-content h-10 w-32 items-center">
+          <NavLink className="text-white visited:text-white no-underline" to="/about">About</NavLink>
         </div>
       </div>
     </div>
