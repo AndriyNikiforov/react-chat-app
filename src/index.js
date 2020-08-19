@@ -12,6 +12,11 @@ import history from './utils/history';
 
 import './assets/tailwind.css';
 
+import addMessage from './actions';
+
+window.store = store;
+window.addMessage = addMessage;
+
 const App = () => (
   <Provider store={store}>
     <Router history={history}>
