@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import axios from 'axios';
+import addMessage from '../../actions/index';
 
 import Input from '../../components/Input';
 import Label from '../../components/Label';
 import Button from '../../components/Button';
 import Textarea from '../../components/Textarea';
+
+function mapDispatchToProps(dispatch) {
+  return {
+    addMessage: (message) => dispatch(addMessage(message)),
+  };
+}
 
 class Contact extends Component {
   constructor(props) {
@@ -69,7 +77,7 @@ class Contact extends Component {
               placeholder="Message"
             />
           </div>
-          <div className="flex items-center">
+          <div className="flex justify-center">
             <Button
               text="Send"
               name="send"
@@ -82,4 +90,6 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+const ContactForm = connect(null, mapDispatchToProps)(Contact);
+
+export default ContactForm;
