@@ -8,10 +8,9 @@ const Contact = () => (
   <div className="container mx-auto">
     <Header />
     <Cart data="" />
-    <section className="flex justify-center pt-20 xs:pt-5">
+    <section className="flex justify-center mb-4 pt-20 xs:pt-5">
       <ContactForm />
     </section>
-    <br />
     <Footer />
   </div>
 );
