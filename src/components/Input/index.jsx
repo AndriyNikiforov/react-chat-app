@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 
 const Input = (props) => {
   const {
-    value, placeholder, onChange, name,
+    value, placeholder, onChange, name, type,
   } = props;
 
   return (
     <input
-      className="shadow appearance-none border rounded w-full py- px-3 text-gray"
+      type={type}
+      className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
       placeholder={placeholder}
       value={value}
       onChange={onChange}
@@ -18,6 +19,7 @@ const Input = (props) => {
 };
 
 Input.propTypes = {
+  type: PropTypes.string,
   name: PropTypes.string,
   value: PropTypes.string,
   placeholder: PropTypes.string,
@@ -26,6 +28,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   name: '',
+  type: 'text',
   value: '',
   placeholder: '',
   onChange: () => {},

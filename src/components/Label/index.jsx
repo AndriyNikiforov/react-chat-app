@@ -5,7 +5,10 @@ const Label = (props) => {
   const { text, labelFor } = props;
 
   return (
-    <label htmlFor={labelFor}>
+    <label
+      className="block text-gray-700 text-sm font-bold mb-2"
+      htmlFor={labelFor}
+    >
       {text}
     </label>
   );

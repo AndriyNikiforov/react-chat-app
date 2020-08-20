@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = (props) => {
-  const { onClick, text, name } = props;
+  const { onSubmit, text, name } = props;
 
   return (
     <button
-      className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline "
+      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
       type="submit"
       name={name}
-      onClick={onClick}
+      onSubmit={onSubmit}
     >
       {text}
     </button>
@@ -19,13 +19,13 @@ const Button = (props) => {
 Button.propTypes = {
   text: PropTypes.string,
   name: PropTypes.string,
-  onClick: PropTypes.func,
+  onSubmit: PropTypes.func,
 };
 
 Button.defaultProps = {
   text: '',
   name: '',
-  onClick: () => {},
+  onSubmit: () => {},
 };
 
 export default Button;
